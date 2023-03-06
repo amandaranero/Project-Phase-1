@@ -30,7 +30,7 @@ function renderMovie(movie){
     //  current rating
         const movieRating = document.createElement("p")
         movieRating.className = "rating"
-        movieRating.innerText = `potatoes: ${movie.rating}`
+        movieRating.innerText = `Potatoes: ${movie.rating}`
     //  likeButton increas 
         const ratingIncreas = document.createElement("button")
         ratingIncreas.className = "rating-increas"

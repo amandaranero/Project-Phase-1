@@ -1,0 +1,165 @@
+
+
+/* Set font family and font size for the whole page */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+  }
+  
+  /* Set the background color for the page */
+  /* Maybe we can put some Backgorund Picture */
+
+  body {
+    background-color: #f5f5f5;
+    background-image: url("https://img.freepik.com/free-vector/film-strp-3d-background-with-roll-projector_1017-36680.jpg?w=2000&t=st=1678132312~exp=1678132912~hmac=59374c1474492f9545e4e52f719ec8eef9046daf4d0ed4839ce9ef0f2875f0c7");
+  }
+  
+ /* Style for the title */
+
+   #title {
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  #title h1 {
+    font-size: 48px;
+    color: rgb(255, 0, 0);
+    margin-bottom: 20px;
+  }
+  
+  /* Style for the movie cards* CHEEEEECK AGAIN */
+
+  #movie-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  /* Cheeckk */
+
+  #movie-cards > div {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    margin: 20px;
+    padding: 20px;
+    width: 300px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* Hovers the card when mouse over. But will try to make it bigger */
+  /* we might wanna change the color of cards */
+
+  /* Makes a shadow when cards hover */
+  #movie-cards > div:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 8px rgba(237, 6, 6, 0.2);
+  }
+  
+  #movie-cards > div img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  /* Style for the inner div  */
+  /* The distance of the writings on cards */
+
+  .inner-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .inner-div p {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .rating {
+    font-weight: bold;
+  }
+  
+  /* Increase and decrease Like buttons */
+
+  .rating-increas, .rating-decrease {
+    background-color: #333;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 24%; /* center the plus and minus sign */
+    font-size: 25px; /* the size of plus and minus sign */
+    width: 40px;
+    height: 40px;
+    margin-top: 24px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  /* .rating-increas {
+    background-color: green;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  
+  .rating-decrease {
+    background-color: red;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  } */
+  
+  /* hovers the plus and minus button when mouse over */
+
+  .rating-increas:hover, .rating-decrease:hover {
+    transform: scale(1.2);
+  }
+  
+  .comment-section {
+    margin-top: 30px;
+  }
+  
+  /* when click the images center location of the form */
+  /* try to make it like box */
+
+  .comment-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+  }
+  
+
+  .comment-form input[type="text"], .comment-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+  
+  /* .comment-form input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  } */
+  
+  /* it will hover the submit button */
+  .comment-form input[type="submit"]:hover {
+    transform: scale(1.1);
+  }
