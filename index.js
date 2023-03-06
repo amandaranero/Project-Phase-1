@@ -27,19 +27,37 @@ function renderMovie(movie){
         // run time 
         const runTime = document.createElement("p")
         runTime.innerText = `Runtime: ${movie.runTime}`
+        // current rating calculator
+        const ratingCal = movie.rating.reduce((a, b) => a + b, 0)
+        const ratingsTotal = ratingCal / movie.rating.length
     //  current rating
         const movieRating = document.createElement("p")
         movieRating.className = "rating"
-        movieRating.innerText = `Potatoes: ${movie.rating}`
-    //  likeButton increas 
-        const ratingIncreas = document.createElement("button")
-        ratingIncreas.className = "rating-increas"
-        ratingIncreas.innerText = "+"
-    //  rating decrease
-        const ratingDecrease = document.createElement("button")
-        ratingDecrease.className = "rating-decrease"
-        ratingDecrease.innerText = "-"
-        innerDiv.append(runTime, movieRating, ratingIncreas, ratingDecrease)
+        movieRating.innerText = `Potatoes: ${ratingsTotal} / 11`
+    // likes form
+        const likesForm = document.createElement("form")
+        const likesInput = document.createElement("input")
+        likesForm.append(likesInput)
+    // input 
+        likesForm.addEventListener("submit", (e) => {
+            e.preventDefault()
+            const movieArray = movie.rating
+            movieArray.push(parseInt(likesInput.value))
+            console.log(movieArray)
+            fetch(`http://localhost:3000/Movies/${movie.id}`,{
+                method:"PATCH",
+                headers:{
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify({rating: movieArray})
+            })
+            .movieRating.innerText = `potatoes: ${Math.trunc(movieArray.reduce((a,b) => a + b,0) / movieArray.length)}`
+            
+        })
+        
+        
+
+        innerDiv.append(runTime, movieRating, likesForm)
     //  comment section div
         const commentDiv = document.createElement('div')
         commentDiv.className = "comment-section"
@@ -48,6 +66,8 @@ function renderMovie(movie){
         form.className = "comment-form"
         form.innerText = "form"
         // append
+
+
         commentDiv.append(form)
         movieCard.append(commentDiv)
     
