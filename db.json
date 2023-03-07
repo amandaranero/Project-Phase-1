@@ -10,9 +10,17 @@
         "Dog",
         "Amanda Ranero",
         "lala",
-        "Mandy"
+        "Mandy",
+        "ss",
+        "ddd",
+        "Amanda Ranero"
       ],
-      "rating": 0
+      "rating": [
+        8,
+        10,
+        11,
+        11
+      ]
     },
     {
       "id": 2,
@@ -24,7 +32,13 @@
         "Dog",
         "lala"
       ],
-      "rating": 0
+      "rating": [
+        8,
+        10,
+        11,
+        11,
+        7
+      ]
     },
     {
       "id": 3,
@@ -35,7 +49,12 @@
         "Mandy",
         "Dog"
       ],
-      "rating": 0
+      "rating": [
+        8,
+        10,
+        11,
+        11
+      ]
     },
     {
       "id": 4,
@@ -46,7 +65,12 @@
         "Mandy",
         "Dog"
       ],
-      "rating": 0
+      "rating": [
+        8,
+        10,
+        11,
+        11
+      ]
     },
     {
       "id": 5,
@@ -54,7 +78,12 @@
       "image": "https://upload.wikimedia.org/wikipedia/en/1/11/2001_A_Space_Odyssey_%281968%29.png",
       "runTime": 143,
       "comment": "Mandy",
-      "rating": 0
+      "rating": [
+        8,
+        10,
+        11,
+        11
+      ]
     },
     {
       "id": 6,
@@ -65,7 +94,12 @@
         "Mandy",
         "Dog"
       ],
-      "rating": 0
+      "rating": [
+        8,
+        10,
+        11,
+        11
+      ]
     },
     {
       "id": 7,
@@ -73,7 +107,12 @@
       "image": "https://upload.wikimedia.org/wikipedia/en/5/50/The_Matrix_Resurrections.jpg",
       "runTime": 148,
       "comment": "",
-      "rating": 0
+      "rating": [
+        8,
+        10,
+        11,
+        11
+      ]
     },
     {
       "id": 8,
@@ -84,7 +123,12 @@
         "Mandy",
         "Dog"
       ],
-      "rating": 0
+      "rating": [
+        8,
+        10,
+        11,
+        11
+      ]
     },
     {
       "id": 9,
@@ -95,7 +139,12 @@
         "Mandy",
         "Dog"
       ],
-      "rating": 0
+      "rating": [
+        8,
+        10,
+        11,
+        11
+      ]
     },
     {
       "id": 10,
@@ -106,7 +155,12 @@
         "Mandy",
         "Dog"
       ],
-      "rating": 0
+      "rating": [
+        8,
+        10,
+        11,
+        11
+      ]
     },
     {
       "id": 11,
@@ -117,7 +171,12 @@
         "Mandy",
         "Dog"
       ],
-      "rating": 0
+      "rating": [
+        8,
+        10,
+        11,
+        11
+      ]
     },
     {
       "id": 12,
@@ -128,7 +187,12 @@
         "Mandy",
         "Dog"
       ],
-      "rating": 0
+      "rating": [
+        8,
+        10,
+        11,
+        11
+      ]
     },
     {
       "id": 13,
@@ -139,7 +203,12 @@
         "Mandy",
         "Dog"
       ],
-      "rating": 0
+      "rating": [
+        8,
+        10,
+        11,
+        11
+      ]
     },
     {
       "id": 14,
@@ -150,7 +219,12 @@
         "Mandy",
         "Dog"
       ],
-      "rating": 0
+      "rating": [
+        8,
+        10,
+        11,
+        11
+      ]
     },
     {
       "id": 15,
@@ -161,7 +235,12 @@
         "Mandy",
         "Dog"
       ],
-      "rating": 0
+      "rating": [
+        8,
+        10,
+        11,
+        11
+      ]
     },
     {
       "id": 16,
@@ -172,7 +251,12 @@
         "Mandy",
         "Dog"
       ],
-      "rating": 0
+      "rating": [
+        8,
+        10,
+        11,
+        11
+      ]
     },
     {
       "id": 17,
@@ -183,7 +267,12 @@
         "Mandy",
         "Dog"
       ],
-      "rating": 0
+      "rating": [
+        8,
+        10,
+        11,
+        11
+      ]
     },
     {
       "id": 18,
@@ -194,7 +283,12 @@
         "Mandy",
         "Dog"
       ],
-      "rating": 0
+      "rating": [
+        8,
+        10,
+        11,
+        11
+      ]
     },
     {
       "id": 19,
@@ -205,7 +299,12 @@
         "Mandy",
         "Dog"
       ],
-      "rating": 0
+      "rating": [
+        8,
+        10,
+        11,
+        11
+      ]
     },
     {
       "id": 20,
@@ -216,7 +315,12 @@
         "Mandy",
         "Dog"
       ],
-      "rating": 0
+      "rating": [
+        8,
+        10,
+        11,
+        11
+      ]
     },
     {
       "id": 21,
@@ -227,7 +331,12 @@
         "Mandy",
         "Dog"
       ],
-      "rating": 0
+      "rating": [
+        8,
+        10,
+        11,
+        11
+      ]
     },
     {
       "id": 22,
@@ -238,7 +347,12 @@
         "Mandy",
         "Dog"
       ],
-      "rating": 0
+      "rating": [
+        8,
+        10,
+        11,
+        11
+      ]
     },
     {
       "id": 23,
@@ -249,7 +363,12 @@
         "Mandy",
         "Dog"
       ],
-      "rating": 0
+      "rating": [
+        8,
+        10,
+        11,
+        11
+      ]
     },
     {
       "id": 24,
@@ -260,7 +379,12 @@
         "Mandy",
         "Dog"
       ],
-      "rating": 0
+      "rating": [
+        8,
+        10,
+        11,
+        11
+      ]
     },
     {
       "id": 25,
@@ -271,7 +395,12 @@
         "Mandy",
         "Dog"
       ],
-      "rating": 0
+      "rating": [
+        8,
+        10,
+        11,
+        11
+      ]
     },
     {
       "id": 26,
@@ -282,7 +411,12 @@
         "Mandy",
         "Dog"
       ],
-      "rating": 0
+      "rating": [
+        8,
+        10,
+        11,
+        11
+      ]
     },
     {
       "id": 27,
@@ -293,7 +427,12 @@
         "Mandy",
         "Dog"
       ],
-      "rating": 0
+      "rating": [
+        8,
+        10,
+        11,
+        11
+      ]
     },
     {
       "id": 28,
@@ -304,7 +443,12 @@
         "Mandy",
         "Dog"
       ],
-      "rating": 0
+      "rating": [
+        8,
+        10,
+        11,
+        11
+      ]
     },
     {
       "id": 29,
@@ -315,7 +459,12 @@
         "Mandy",
         "Dog"
       ],
-      "rating": 0
+      "rating": [
+        8,
+        10,
+        11,
+        11
+      ]
     },
     {
       "id": 30,
@@ -326,7 +475,12 @@
         "Mandy",
         "Dog"
       ],
-      "rating": 0
+      "rating": [
+        8,
+        10,
+        11,
+        11
+      ]
     }
   ]
 }
