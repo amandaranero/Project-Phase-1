@@ -51,9 +51,10 @@ function renderMovie(movie){
                 },
                 body: JSON.stringify({rating: movieArray})
             })
-            .movieRating.innerText = `potatoes: ${Math.trunc(movieArray.reduce((a,b) => a + b,0) / movieArray.length)}`
-            
+            movieRating.innerText = `potatoes: ${Math.trunc(movieArray.reduce((a,b) => a + b,0) / movieArray.length)}`
+            likesForm.reset()
         })
+        
         
         
 
