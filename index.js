@@ -19,12 +19,12 @@ function renderMovie(movie){
 
     movieCard.append(movieName, movieImg, innerDiv)
     movieCards.append(movieCard)
-
+    const commentDiv = document.createElement('div')
     
 
     //  drop down stuff
     movieImg.addEventListener("click", ()=> {
-        const commentDiv = document.createElement('div')
+        // const commentDiv = document.createElement('div')
         commentDiv.className = "comment-section"
         commentDiv.innerHTML = ""
         innerDiv.innerHTML = ""
@@ -41,16 +41,19 @@ function renderMovie(movie){
       //  current rating
           const movieRating = document.createElement("p")
           movieRating.className = "rating"
-          movieRating.innerText = `Potatoes: ${ratingsTotal} / 11`
+          movieRating.innerText = `Potatoes: ${Math.trunc(ratingsTotal)} / 11`
       // likes form
           const likesForm = document.createElement("form")
           const likesInput = document.createElement("input")
+         likesInput.setAttribute("type", "number")
+         likesInput.setAttribute("min", "1")
+         likesInput.setAttribute("max", "11")
           likesForm.append(likesInput)
       // input 
           likesForm.addEventListener("submit", (e) => {
               e.preventDefault()
-              const movieArray = movie.rating
-              movieArray.push(parseInt(likesInput.value))
+              const movieArray = movie.rating 
+              movieArray.push(parseInt(ratingsInput))
               console.log(movieArray)
               fetch(`http://localhost:3000/Movies/${movie.id}`,{
                   method:"PATCH",
@@ -127,7 +130,10 @@ function renderMovie(movie){
         })
         .then((resp)=> resp.json())
         .then((comments)=>{
-        movieList(comments)
+            const commentList = document.createElement("li")
+            commentList.className = "comment-list"
+            commentList.innerText = form.name.value
+            commentListContainer.append(commentList)
             form.reset()
        })
     })
