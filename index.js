@@ -53,7 +53,7 @@ function renderMovie(movie){
           likesForm.addEventListener("submit", (e) => {
               e.preventDefault()
               const movieArray = movie.rating 
-              movieArray.push(parseInt(ratingsInput))
+              movieArray.push(parseInt(likesInput.value))
               console.log(movieArray)
               fetch(`http://localhost:3000/Movies/${movie.id}`,{
                   method:"PATCH",

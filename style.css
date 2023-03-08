@@ -1,5 +1,4 @@
 
-
 /* Set font family and font size for the whole page */
 body {
     font-family: Arial, sans-serif;
@@ -16,16 +15,63 @@ body {
   
  /* Style for the title */
 
-   #title {
-    text-align: center;
-    margin-top: 30px;
+ /* #title {
+    background-color: rgb(255, 0, 0);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    font-size: 36px;
+    text-transform: uppercase;
   }
+  
+
   
   #title h1 {
     font-size: 48px;
-    color: rgb(255, 0, 0);
+    color: rgb(235, 235, 235);
     margin-bottom: 20px;
+  } */
+
+  
+  #title {
+    background: linear-gradient(135deg, #ed0d0d, #4334ee);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 700;
+    position: relative;
   }
+  
+  #title::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    z-index: -1;
+    animation: animate 8s linear infinite;
+  }
+  
+  #title h1 {
+    margin: 0;
+  }
+  
+  @keyframes animate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  
   
   /* Style for the movie cards* CHEEEEECK AGAIN */
 
@@ -38,7 +84,7 @@ body {
   /* Cheeckk */
 
   #movie-cards > div {
-    background-color: #fff;
+    background-color: rgb(126, 110, 81);
     border-radius: 5px;
     box-shadow: 0 2px 6px rgba(0,0,0,0.1);
     margin: 20px;
@@ -53,7 +99,7 @@ body {
   /* Makes a shadow when cards hover */
   #movie-cards > div:hover {
     transform: translateY(-10px);
-    box-shadow: 0 4px 8px rgba(237, 6, 6, 0.2);
+    box-shadow: 0 20px 40px rgba(255, 0, 0, 0.8);
   }
   
   #movie-cards > div img {
@@ -65,7 +111,7 @@ body {
   /* Style for the inner div  */
   /* The distance of the writings on cards */
 
-  .inner-div {
+    .inner-div {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -74,29 +120,47 @@ body {
   
   .inner-div p {
     font-size: 20px;
-    color: #333;
+    color: rgb(255, 248, 248);
     margin-bottom: 10px;
-  }
-  
+  } 
+
   .rating {
     font-weight: bold;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    background-color: #c92929;
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
   }
+  
+  .rating:hover {
+    transform: scale(1.1);
+  }
+  
   
   /* Increase and decrease Like buttons */
 
-  .rating-increas, .rating-decrease {
+    /* Not Using AnyMore */
+/*
+    .rating-increas, .rating-decrease {
     background-color: #333;
     color: rgb(255, 255, 255);
     border: none;
-    border-radius: 24%; /* center the plus and minus sign */
-    font-size: 25px; /* the size of plus and minus sign */
+    border-radius: 24%; 
+    font-size: 25px; 
     width: 40px;
     height: 40px;
     margin-top: 24px;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
-  }
-  /* .rating-increas {
+  }  
+  */
+
+  
+   /* .rating-increas {
     background-color: green;
     color: white;
     font-size: 20px;
@@ -117,17 +181,19 @@ body {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-  } */
+  }  */
   
   /* hovers the plus and minus button when mouse over */
 
-  .rating-increas:hover, .rating-decrease:hover {
+  /* .rating-increas:hover, .rating-decrease:hover {
     transform: scale(1.2);
-  }
+  } */
   
+
   .comment-section {
     margin-top: 30px;
   }
+  
   
   /* when click the images center location of the form */
   /* try to make it like box */
@@ -135,7 +201,7 @@ body {
   .comment-form {
     display: flex;
     flex-direction: column;
-    align-items: center; 
+    align-items: flex-start; 
   }
   
 
@@ -148,18 +214,28 @@ body {
     font-size: 16px;
   }
   
-  /* .comment-form input[type="submit"] {
-    background-color: #333;
+  .comment-form input[type="submit"] {
+    background-color: #f05454;
     color: #fff;
     border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
-    font-size: 16px;
+    border-radius: 50px;
+    padding: 12px 24px;
+    font-size: 18px;
+    font-weight: bold;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
-  } */
-  
-  /* it will hover the submit button */
-  .comment-form input[type="submit"]:hover {
-    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.comment-form input[type="submit"]:hover {
+    background-color: #4b483d;
+    transform: scale(1.05);
+}
+h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
   }
+  
+
