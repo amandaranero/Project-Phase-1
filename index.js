@@ -7,6 +7,7 @@ document.addEventListener( "DOMContentLoaded", () => {
 function renderMovie(movie){
     const movieCards = document.getElementById("movie-cards")
     const innerDiv = document.createElement("div")
+    innerDiv.className = "inner-div"
 // create div
     const movieCard = document.createElement("div")
 // name
@@ -24,6 +25,13 @@ function renderMovie(movie){
 
     //  drop down stuff
     movieImg.addEventListener("click", ()=> {
+        if(innerDiv.hasChildNodes()){
+            commentDiv.innerHTML = "" , innerDiv.innerHTML = ''
+        }else{
+            secondDiv()
+        }
+        function secondDiv(){
+
         // const commentDiv = document.createElement('div')
         commentDiv.className = "comment-section"
         commentDiv.innerHTML = ""
@@ -49,6 +57,14 @@ function renderMovie(movie){
          likesInput.setAttribute("min", "1")
          likesInput.setAttribute("max", "11")
           likesForm.append(likesInput)
+          // Potato Emoji 
+          
+          const potatoImg = document.createElement('span')
+          potatoImg.className = "Potato-Emoji"
+          potatoImg.innerHTML = '<img src="https://images.emojiterra.com/google/android-11/512px/1f954.png">';
+          movieRating.append(potatoImg)
+  
+
       // input 
           likesForm.addEventListener("submit", (e) => {
               e.preventDefault()
@@ -62,7 +78,11 @@ function renderMovie(movie){
                   },
                   body: JSON.stringify({rating: movieArray})
               })
-              movieRating.innerText = `potatoes: ${Math.trunc(movieArray.reduce((a,b) => a + b,0) / movieArray.length)}`
+              movieRating.innerText = `Potatoes: ${Math.trunc(movieArray.reduce((a,b) => a + b,0) / movieArray.length)} / 11`
+                const potatoImg = document.createElement('span')
+                potatoImg.className = "Potato-Emoji"
+                potatoImg.innerHTML = '<img src="https://images.emojiterra.com/google/android-11/512px/1f954.png">';
+                movieRating.append(potatoImg)
               likesForm.reset()
           })
           innerDiv.append(runTime, movieRating, likesForm)
@@ -137,7 +157,8 @@ function renderMovie(movie){
             form.reset()
        })
     })
-    })
+    }})
 
 }
+
 

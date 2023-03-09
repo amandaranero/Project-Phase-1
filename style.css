@@ -7,34 +7,11 @@ body {
   
   /* Set the background color for the page */
   /* Maybe we can put some Backgorund Picture */
-
   body {
     background-color: #f5f5f5;
     background-image: url("https://img.freepik.com/free-vector/film-strp-3d-background-with-roll-projector_1017-36680.jpg?w=2000&t=st=1678132312~exp=1678132912~hmac=59374c1474492f9545e4e52f719ec8eef9046daf4d0ed4839ce9ef0f2875f0c7");
   }
-  
- /* Style for the title */
 
- /* #title {
-    background-color: rgb(255, 0, 0);
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 80px;
-    font-size: 36px;
-    text-transform: uppercase;
-  }
-  
-
-  
-  #title h1 {
-    font-size: 48px;
-    color: rgb(235, 235, 235);
-    margin-bottom: 20px;
-  } */
-
-  
   #title {
     background: linear-gradient(135deg, #ed0d0d, #4334ee);
     color: #fff;
@@ -70,8 +47,6 @@ body {
       transform: rotate(360deg);
     }
   }
-  
-  
   
   /* Style for the movie cards* CHEEEEECK AGAIN */
 
@@ -120,80 +95,31 @@ body {
   
   .inner-div p {
     font-size: 20px;
-    color: rgb(255, 248, 248);
+    color: rgb(33, 33, 33);
     margin-bottom: 10px;
   } 
-
-  .rating {
+ 
+    /* .rating {
     font-weight: bold;
-    font-size: 18px;
+    font-size: 10px;
     font-family: 'Roboto', sans-serif;
-    background-color: #c92929;
-    color: #fff;
-    padding: 8px 12px;
-    border-radius: 6px;
+    background-color: #1c153f;
+    color: rgb(255, 255, 255);
+    padding: 0px 50px;
+    border-radius: 30px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s ease-in-out;
   }
-  
+   
   .rating:hover {
     transform: scale(1.1);
-  }
-  
-  
-  /* Increase and decrease Like buttons */
-
-    /* Not Using AnyMore */
-/*
-    .rating-increas, .rating-decrease {
-    background-color: #333;
-    color: rgb(255, 255, 255);
-    border: none;
-    border-radius: 24%; 
-    font-size: 25px; 
-    width: 40px;
-    height: 40px;
-    margin-top: 24px;
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
-  }  
-  */
-
-  
-   /* .rating-increas {
-    background-color: green;
-    color: white;
-    font-size: 20px;
-    font-weight: bold;
-    padding: 5px 10px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-right: 10px;
-  }
-  
-  .rating-decrease {
-    background-color: red;
-    color: white;
-    font-size: 20px;
-    font-weight: bold;
-    padding: 5px 10px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }  */
-  
-  /* hovers the plus and minus button when mouse over */
-
-  /* .rating-increas:hover, .rating-decrease:hover {
-    transform: scale(1.2);
   } */
   
+
 
   .comment-section {
     margin-top: 30px;
   }
-  
   
   /* when click the images center location of the form */
   /* try to make it like box */
@@ -237,5 +163,23 @@ h3 {
     margin-bottom: 10px;
     color: #333;
   }
-  
 
+  .Potato-Emoji img {
+    max-width: 30px;
+    height: auto;
+    position: relative;
+    top: 15px;
+    right: 175px;
+    transition: transform 0.5s;
+  }
+  
+  .Potato-Emoji img:hover {
+    transform: rotate(360deg) scale(2.5);
+  }
+  
+ 
+
+  
+  
+  
+  
