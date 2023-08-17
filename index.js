@@ -31,6 +31,7 @@ function renderMovie(movie){
             secondDiv()
         }
         function secondDiv(){
+            
 
         // const commentDiv = document.createElement('div')
         commentDiv.className = "comment-section"
